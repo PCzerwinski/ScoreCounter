@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/score_board_main_linear_layout">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/score_board_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/toolbar_shadow"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Round"
+            android:paddingTop="16dp"
+             android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:gravity="right"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_weight="0.8"
+            android:id="@+id/round_score_text_view"
+           />
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Team A"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:gravity="right"
+            android:id="@+id/score_board_team_name_1"
+            android:layout_weight="1"/>
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:id="@+id/score_board_team_name_2"
+            android:layout_weight="1"/>
+
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>
