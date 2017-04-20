@@ -42,6 +42,11 @@ public class ScoreBoardActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+        else
+        {
+
+            clearAllItems();
+        }
         if (dataList.size()>0) loadData(dataList);
     }
 
@@ -168,6 +173,12 @@ public class ScoreBoardActivity extends AppCompatActivity {
         mainLayout.addView(image);
         mainLayout.addView(layout);
 
+    }
+
+    private void clearAllItems()
+    {
+        LinearLayout layout = (LinearLayout)  findViewById(R.id.score_board_main_linear_layout);
+        layout.removeAllViews();
     }
 
 }
